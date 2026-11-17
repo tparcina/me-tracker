@@ -6,7 +6,7 @@
 <main><h1>ME Tracker</h1><p>Find nearby Mercenary Exchanges.</p><section class="fields"><label>Home kingdom<input id="home" type="number" min="1" max="999" step="1" value="127"></label><label>Maximum distance<input id="radius" type="number" min="1" max="999" step="1" value="3"></label></section><p id="status" role="status">Loading locations…</p><section class="scroll"><table><thead><tr><th>Kingdom</th><th>Location</th><th>Distance</th><th>Discovered ↓</th><th>Copy</th></tr></thead><tbody id="rows"></tbody></table></section><footer>Unofficial community tool. Locations may change. <button id="privacy">Analytics settings</button></footer></main>
 <section id="consent" hidden><strong>Help improve ME Tracker</strong><p>Optional Google Analytics measures visits and use of kingdom filters and coordinate copying. No player names are collected. You can change your choice anytime. <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google privacy policy</a>.</p><button id="accept">Accept analytics</button> <button id="decline">Decline</button></section>
 <script>
-const GA_ID = ""; // Set your GA4 measurement ID here.
+const GA_ID = "G-4CP9TD296R"; // Set your GA4 measurement ID here.
 const FEED="https://raw.githubusercontent.com/tparcina/me-tracker/data/me_locations.json";
 const $=id=>document.getElementById(id);
 let feed=null, busy=false, loaded=false, timer;
